@@ -15,3 +15,8 @@ ssh -A -J bastionIP someintranalhostIP
 	ProxyJump bastion
 	User appuser
 3. после этого будет работать ssh someinternalhost
+
+
+конфигурация ovpn
+bastion_IP = 51.250.84.191
+someinternalhost_IP = 10.128.0.20
