@@ -20,3 +20,16 @@ ssh -A -J bastionIP someintranalhostIP
 конфигурация ovpn
 bastion_IP = 51.250.84.191
 someinternalhost_IP = 10.128.0.20
+
+
+HW3
+
+скопировать на созданую ВМ файлы
+deploy.sh
+install_mongodb.sh
+install_ruby.sh
+startup.sh
+запустить startup.sh
+
+testapp_IP = 51.250.11.121
+testapp_port = 9292
