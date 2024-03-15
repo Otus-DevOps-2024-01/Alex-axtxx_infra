@@ -8,6 +8,7 @@ variable zone {
   description = "Zone"
   # Значение по умолчанию
   default = "ru-central1-a"
+  type = string
 }
 variable public_key_path {
   # Описание переменной
