@@ -71,6 +71,6 @@ packer validate ./ubuntu16.json
 
 packer build ./ubuntu16.json
 
-testapp_IP = 130.193.51.233
+testapp_IP = 51.250.6.169
 
 testapp_port = 9292
