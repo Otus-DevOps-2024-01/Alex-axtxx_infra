@@ -2,7 +2,7 @@
     "builders": [
       {
         "type":"yandex",
-        "service_account_key_file": "key.json",
+        "service_account_key_file": "{{user `key_file`}}",
         "folder_id": "b1gdd8e654smrbauj04n",
         "source_image_family": "ubuntu-1604-lts",
         "image_name": "mongodb-base-{{timestamp}}",
