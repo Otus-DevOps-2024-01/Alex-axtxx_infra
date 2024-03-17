@@ -74,3 +74,37 @@ packer build ./ubuntu16.json
 testapp_IP = 51.250.6.169
 
 testapp_port = 9292
+
+
+HW6
+Structure
+terraform/main.tf describes creation instances reddit-app
+terraform/outputs.tf - output variables in stdout
+terraform/variables.tf - describes variables
+terraform/tfvars.example - example of vars initialize
+terraform/lb.tf - network load balancer
+Deploy
+Create yc service account and add editor permission.
+Enter in terraform directory
+Run commands:
+ terraform init
+ terraform apply
+Run Check
+terraform output | grep external_ip_address_lb
+
+Open in browser http://external_ip_address_lb:9292
+
+
+HW7
+
+Crate packer images for db and app
+Create modules app,db,vpc
+Create stage and prod environment based by modules
+Create access-key for backend storage
+Create storage for terraform.tfstate
+Add provisioners for autostart db and app
+Run
+Go to stage/prod directory
+Run commands:
+ terraform init
+ terraform apply
