@@ -108,3 +108,6 @@ Go to stage/prod directory
 Run commands:
  terraform init
  terraform apply
+
+HW8
+brew install ansible
