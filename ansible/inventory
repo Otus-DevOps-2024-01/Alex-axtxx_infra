@@ -1,4 +1,4 @@
 [app]
-appserver ansible_host=158.160.59.119 ansible_python_interpreter="/usr/bin/env python3"
+appserver ansible_host=62.84.117.215 ansible_python_interpreter="/usr/bin/env python3"
 [db]
-dbserver ansible_host=84.252.131.219 ansible_python_interpreter="/usr/bin/env python3"
+dbserver ansible_host=51.250.9.86 ansible_python_interpreter="/usr/bin/env python3"
