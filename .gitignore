@@ -6,4 +6,5 @@ packer/key.json
 *.tfvars
 .terraform/
 *.retry
+
 vault.key
