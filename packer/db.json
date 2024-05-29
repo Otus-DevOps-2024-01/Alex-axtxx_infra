@@ -1,22 +1,22 @@
 {
     "builders": [
-      {
-        "type":"yandex",
-        "service_account_key_file": "{{user `key_file`}}",
-        "folder_id": "b1gdd8e654smrbauj04n",
-        "source_image_family": "ubuntu-1604-lts",
-        "image_name": "mongodb-base-{{timestamp}}",
-        "image_family": "mongo-db-1",
-        "ssh_username": "ubuntu",
-        "platform_id": "standard-v1",
-        "use_ipv4_nat": "true",
-        "zone": "ru-central1-b"
-      }
+        {
+            "type": "yandex",
+            "service_account_key_file": "{{user `my_sa_key_file`}}",
+            "folder_id": "{{user `my_folder_id`}}",
+            "source_image_family": "{{user `my_source_image_family`}}",
+            "image_name": "mongodb-{{timestamp}}",
+            "image_family": "mongodb",
+            "ssh_username": "ubuntu",
+            "platform_id": "standard-v1",
+            "use_ipv4_nat": "true"
+        }
     ],
     "provisioners": [
-      {
-        "type": "ansible",
-       "playbook_file": "ansible/packer_db.yml"
-      }
-      ]
-  }
+        {
+            "type": "ansible",
+            "playbook_file": "ansible/playbooks/packer_db.yml"
+        }
+    ]
+
+}
