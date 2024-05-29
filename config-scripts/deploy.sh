@@ -1,7 +1,12 @@
-#!/bin/bash -e
-
-sudo apt-get update
+#!/bin/bash
+set -e
+APP_DIR=${1:-$HOME}
+sudo apt update
 sudo apt-get install -y git
-git clone -b monolith https://github.com/express42/reddit.git
-cd reddit && bundle install
-puma -d
+git clone -b monolith https://github.com/express42/reddit.git $APP_DIR/reddit
+cd $APP_DIR/reddit
+bundle install
+sudo puma -d
+#sudo mv ./puma.service /etc/systemd/system/puma.service
+sudo systemctl start puma
+sudo systemctl enable puma

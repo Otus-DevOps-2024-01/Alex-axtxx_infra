@@ -1,14 +1,15 @@
 variable public_key_path {
-  # Описание переменной
-  description = "Path to the public key used for ssh access"
+  description = "../../../.ssh/ubuntu.pub"
+  type        = string
 }
 
-
 variable db_disk_image {
-  description = "Disk image for reddit db"
-  default = "reddit-db-base"
+  description = "Disk image for reddit database"
+  default     = "reddit-db-base"
+  type        = string
 }
 
 variable subnet_id {
-description = "Subnets for modules"
+  description = "MySubnetID"
+  type        = string
 }
