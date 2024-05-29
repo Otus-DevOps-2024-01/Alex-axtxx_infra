@@ -1,7 +1,6 @@
-#!/bin/bash -e
-sleep 10
-apt-get update
-sleep 10
-apt-get install -y ruby-full ruby-bundler build-essential
-ruby -v
-bundler -v
+#!/bin/sh
+apt update
+sleep 5
+apt-get upgrade -y
+sleep 5
+apt install -y ruby-full ruby-bundler build-essential
